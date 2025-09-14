@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>E-Portfolio | SPHP601</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #000;
+      color: #fff;
+    }
+    nav {
+      background: #111;
+      border-bottom: 2px solid #facc15;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    nav .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 1rem;
+    }
+    nav ul {
+      display: flex;
+      list-style: none;
+      gap: 1.5rem;
+      margin: 0;
+      padding: 0;
+    }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      color: #facc15;
+    }
+    section {
+      padding: 4rem 1rem;
+      text-align: center;
+    }
+    h1, h2, h3 {
+      color: #facc15;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+      margin-top: 2rem;
+    }
+    .card {
+      background: #111;
+      border: 1px solid #facc15;
+      border-radius: 12px;
+      padding: 1.5rem;
+      text-align: left;
+    }
+    .card button {
+      background: #facc15;
+      color: #000;
+      font-weight: bold;
+      border: none;
+      padding: 0.5rem 1rem;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+    .card button:hover {
+      background: #fde047;
+    }
+    .placeholder {
+      background: #222;
+      border: 2px dashed #555;
+      height: 200px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #777;
+    }
+    footer {
+      background: #111;
+      border-top: 2px solid #facc15;
+      padding: 1rem;
+      text-align: center;
+      color: #bbb;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navigation -->
+  <nav>
+    <div class="container">
+      <h1>My E-Portfolio</h1>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#videos">Videos</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Home Section -->
+  <section id="home">
+    <h2>Welcome to My Injury Prevention & Rehabilitation E-Portfolio</h2>
+    <p>This portfolio showcases my instructional videos, learning journey, and practical skills in injury prevention and rehabilitation.</p>
+    <button onclick="window.open('https://youtu.be/GONU8qvSS54?si=Jum6TqcF20iFoEdU','_blank')" style="margin-top:1rem; background:#facc15; color:#000; font-weight:bold; border:none; padding:0.75rem 1.5rem; border-radius:8px; cursor:pointer;">
+      Watch Theoretical Basis Video
+    </button>
+  </div>
+
+  </section>
+  <!-- Videos Section -->
+  <section id="videos">
+    <h2>Instructional Videos</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Ankle Rigid Strap</h3>
+        <p>Instructional video demonstrating ankle rigid strapping technique.</p>
+        <button onclick="window.open('https://youtu.be/qPSHAwbwj2I?si=i8fBdvJN_NhfKIP4','_blank')">Watch Video</button>
+      </div>
+      <div class="card">
+        <h3>Knee Rigid Strap</h3>
+        <p>Instructional video demonstrating knee rigid strapping technique.</p>
+        <button onclick="window.open('https://youtu.be/qNpQu_VHk8A?si=Ph63XmKHe8WCvZu7','_blank')">Watch Video</button>
+      </div>
+      <div class="card">
+        <h3>Shoulder Rigid Strap</h3>
+        <p>Instructional video demonstrating shoulder rigid strapping technique.</p>
+        <button onclick="window.open('https://youtu.be/QYy6KE_wCh0?si=cJ2LtYLidU-gsPLm','_blank')">Watch Video</button>
+      </div>
+      <div class="card">
+        <h3>Thumb Rigid Strap</h3>
+        <p>Instructional video demonstrating thumb rigid strapping technique.</p>
+        <button onclick="window.open('https://youtu.be/v8c95o3PeZs?si=WLTJmEHX86jBxD4O','_blank')">Watch Video</button>
+      </div>
+      <div class="card">
+        <h3>Achilles Tendon Kinesiology Taping</h3>
+        <p>Instructional video demonstrating kinesiology taping for the Achilles tendon.</p>
+        <button onclick="window.open('https://youtu.be/hjKW3vXe_JY?si=0pvTt6yxo-4DC1MR','_blank')">Watch Video</button>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 [Ryan Hindman] | SPHP601 Injury Prevention & Rehabilitation</p>
+  </footer>
+</body>
+</html>
